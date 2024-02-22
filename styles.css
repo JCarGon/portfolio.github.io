@@ -4,26 +4,60 @@
   padding: 0;
 }
 body{
-    display: grid;
-    grid-template-columns: 15% 85%;
-    background-color: rgba(20, 21, 38, 0.9);
-    font-family: 'Roboto Mono', monospace;
+  background-color: rgba(20, 21, 38, 0.9);
+  font-family: 'Roboto Mono', monospace;
+}
+.nav a {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logoNombre {
+  width: 70px;
+  height: auto;
+}
+a img{
+  width: 50px;
+  height: 50px;
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(20, 21, 38);
+  position: fixed;
+  justify-content: space-between;
+  width: 120px;
+  height: 100%;
+}
+.nav a:first-child{margin-top: 15px;}
+.nav a:last-child{margin-bottom: 15px;}
+.principal-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 .lado1{
   color: aqua;
   display: flex;
-  justify-content: end;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-right: -60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .lado2{
   color: aqua;
   display: flex;
   text-align: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.efecto{
+  background-color: aqua;
+  width: 400px;
+  height: 5px;
+  margin-top: -15px;
+  margin-bottom: 30px;
 }
 .shadow-container{
   display: flex;
@@ -32,4 +66,26 @@ body{
   border: 2px aqua solid;
   border-radius: 10% 50%;
   box-shadow: 0 5px 15px aqua;
+}
+.programmer-image{
+  width: 300px;
+  height: auto;
+  margin-top: 220px;
+  margin-left: -450px;
+  border-radius: 40px;
+}
+.fotoJCG{
+  width: 350px;
+  margin-right: 50px;
+}
+.shadow-container p{
+  margin-top: 100px;
+  margin-left: 80px;
+  max-width: 650px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+}
+.present-container{
+  margin-left: 150px;
 }
