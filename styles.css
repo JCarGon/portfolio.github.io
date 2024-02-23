@@ -55,7 +55,7 @@ a img{
   margin-left: auto;
   margin-right: auto;
 }
-.shadow-container, .shadow-container-proxya, .shadow-container-school, .shadow-container-uni-huelva, .shadow-container-backend-2, .shadow-container-front {
+.shadow-container, .shadow-container-proxya, .shadow-container-school, .shadow-container-uni-huelva, .shadow-container-backend-2 {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -65,7 +65,7 @@ a img{
   border-radius: 10% 50%;
   box-shadow: 0 5px 15px aqua;
 }
-.shadow-container-university, .shadow-container-ada, .shadow-container-sp, .shadow-container-backend-1 {
+.shadow-container-university, .shadow-container-ada, .shadow-container-sp, .shadow-container-backend-1, .shadow-container-front {
   display: flex;
   width: max-content;
   height: max-content;
@@ -287,6 +287,7 @@ a img{
 }
 .container-backend {
   display: flex;
+  width: 100%;
   justify-content: space-around;
 }
 .shadow-container-backend-1, .shadow-container-backend-2{
@@ -296,8 +297,24 @@ a img{
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding: 50px;
 }
 .shadow-container-backend-1 img, .shadow-container-backend-2 img{
+  width: 110px;
+  height: auto;
+  margin: 50px;
+  border-radius: 40px;
+}
+.shadow-container-front {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+.shadow-container-front img {
   width: 110px;
   height: auto;
   margin: 50px;
@@ -308,12 +325,43 @@ a img{
   height: auto;
   margin: 50px;
 }
-#sombra{
+.shadow-container-languages{
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shadow-container-languages p{
+  max-width: 500px;
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+}
+.shadow-container-languages img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 50px;
+  border-radius: 40px;
+}
+#shadow1, #shadow2, #shadow3 {
   transition: .5s;
 }
-#sombra:hover{
+#shadow1:hover{
   background-color: rgb(20, 21, 38);
   box-shadow: -20px 20px 5px -10px aqua;
+}
+#shadow2:hover{
+  background-color: rgb(20, 21, 38);
+  box-shadow: 20px 20px 5px -10px aqua;
+}
+#shadow3:hover {
+  background-color: rgb(20, 21, 38);
+  box-shadow: 0px 25px 5px -10px aqua;
 }
 li{
   list-style: none;
@@ -323,6 +371,10 @@ li{
   font-size: 1.4rem;
   color: white;
 }
-.iconoUK{
-  margin-bottom: 30px;
+a img {
+  transition: transform .5s;
+}
+a img:hover{
+  transition: transform .5s;
+  transform: scale(1.3);
 }
