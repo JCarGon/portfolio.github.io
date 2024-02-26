@@ -43,7 +43,7 @@ a img{
   color: aqua;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 .efecto {
@@ -55,7 +55,7 @@ a img{
   margin-left: auto;
   margin-right: auto;
 }
-.shadow-container, .shadow-container-proxya, .shadow-container-school, .shadow-container-uni-huelva, .shadow-container-backend-2 {
+.shadow-container, .shadow-container-proxya, .shadow-container-school, .shadow-container-uni-huelva, .shadow-container-backend-2, .shadow-container-front {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -64,14 +64,16 @@ a img{
   border: 2px aqua solid;
   border-radius: 10% 50%;
   box-shadow: 0 5px 15px aqua;
+  margin-bottom: 50px;
 }
-.shadow-container-university, .shadow-container-ada, .shadow-container-sp, .shadow-container-backend-1, .shadow-container-front {
+.shadow-container-university, .shadow-container-ada, .shadow-container-sp, .shadow-container-backend-1 {
   display: flex;
   width: max-content;
   height: max-content;
   border: 2px aqua solid;
   border-radius: 50% 10%;
   box-shadow: 0 5px 15px aqua;
+  margin-bottom: 50px;
 }
 .shadow-container-languages {
   display: flex;
@@ -501,5 +503,29 @@ a img:hover{
     width: 80px;
     height: auto;
     margin: 20px;
+  }
+}
+@media (width <= 450px) {
+  .efecto {width: 300px;}
+  div p {padding: 10px;}
+  .proxya, .ada {height: 55px;}
+  .university, .school {height: 200px;}
+  .uni-huelva, .sp {height: 55px;}
+  .shadow-container-backend-1 img,
+  .shadow-container-backend-2 img {
+    width: 60px;
+    margin: 10px;
+  }
+  .shadow-container-backend-1, .shadow-container-backend-2{
+    grid-template-columns: 100px 100px;
+    padding: 50px;
+  }
+  .shadow-container-front img, .shadow-container-languages img {
+    width: 60px;
+    margin: 10px;
+  }
+  .shadow-container-front {
+    grid-template-columns: 90px 90px;
+    padding: 50px;
   }
 }
