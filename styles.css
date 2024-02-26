@@ -432,7 +432,8 @@ a img:hover{
   }
 }
 @media (width <= 800px) {
-  .nav{visibility: hidden;}
+  body {overflow-x: hidden;}
+  .nav{display: none;}
   .shadow-container, .shadow-container-proxya,
   .shadow-container-university, .shadow-container-school,
   .shadow-container-ada, .shadow-container-uni,
@@ -449,6 +450,7 @@ a img:hover{
     width: 100%;
     justify-content: space-around;
   }
+  .fotoJCG {width: 300px;}
   .proxya, .ada {height: 80px;}
   .university, .school {height: 260px;}
   .uni-huelva, .sp {height: 100px;}
@@ -506,6 +508,7 @@ a img:hover{
   }
 }
 @media (width <= 450px) {
+  .fotoJCG {width: 200px;}
   .efecto {width: 300px;}
   div p {padding: 10px;}
   .proxya, .ada {height: 55px;}
