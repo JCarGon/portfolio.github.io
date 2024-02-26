@@ -4,7 +4,7 @@
   padding: 0;
 }
 body{
-  background-color: rgba(20, 21, 38, 0.9);
+  background-color: rgba(20, 21, 38, 0.8);
   font-family: 'Roboto Mono', monospace;
 }
 .nav a {
@@ -303,7 +303,6 @@ a img{
   width: 110px;
   height: auto;
   margin: 50px;
-  border-radius: 40px;
 }
 .shadow-container-front {
   display: grid;
@@ -377,4 +376,88 @@ a img {
 a img:hover{
   transition: transform .5s;
   transform: scale(1.3);
+}
+
+@media (width <= 1440px) {
+  body {overflow-x: hidden;}
+  .shadow-container {
+    width: 80%;
+    margin-left: 12%;
+  }
+  .shadow-container-backend-1 {
+    margin-left: 15%;
+  }
+  .shadow-container-backend-1, .shadow-container-backend-2{
+    grid-template-columns: 150px 150px;
+    padding: 50px;
+  }
+  .shadow-container-backend-1 img, .shadow-container-backend-2 img{
+    width: 100px;
+    height: auto;
+    margin: 30px;
+  }
+  .back, .front {margin-left: 5%;}
+}
+@media (width <= 1024px) {
+  .shadow-container {
+    width: 70%;
+    margin-left: 20%;
+    margin-right: auto;
+  }
+  .programmer-image {visibility: hidden;}
+  .shadow-container-proxya, .shadow-container-university, .shadow-container-school, .shadow-container-ada, 
+  .shadow-container-uni-huelva, .shadow-container-sp {
+    width: 70%;
+    margin-left: 20%;
+    margin-right: auto;
+  }
+  .shadow-container-backend-1 {
+    margin-left: 16%;
+    margin-right: auto;
+  }
+  .shadow-container-backend-1, .shadow-container-backend-2{
+    grid-template-columns: 120px 120px;
+    padding: 50px;
+  }
+  .shadow-container-backend-1 img, .shadow-container-backend-2 img, .shadow-container-front img{
+    width: 80px;
+    height: auto;
+    margin: 30px;
+  }
+  .shadow-container-front {
+    width: 35%;
+  }
+  .back, .front {margin-left: 8%;}
+  .shadow-container-languages {
+    width: 40%;
+  }
+}
+@media (width <= 800px) {
+  .nav{visibility: hidden;}
+  .shadow-container, .shadow-container-proxya,
+  .shadow-container-university, .shadow-container-school,
+  .shadow-container-ada, .shadow-container-uni,
+  .shadow-container-sp, .shadow-container-cv,
+  .shadow-container-backend-1, .shadow-container-backend-2,
+  .shadow-container-front, .shadow-container-languages,
+  .back, .front {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-backend {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .proxya, .ada {height: 80px;}
+  .university, .school {height: 260px;}
+  .uni-huelva, .sp {height: 100px;}
+  .shadow-container-front {width: 35%;}
+  .shadow-container-front img, .shadow-container-languages img {
+    width: 80px;
+    height: auto;
+    margin: 10px;
+    border-radius: 0px;
+  }
 }
