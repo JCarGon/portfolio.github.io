@@ -403,6 +403,7 @@ a img:hover {
   .shadow-container-school p, .shadow-container-ada p, .shadow-container-uni-huelva p,
   .shadow-container-sp p, .shadow-container-languages p {
     font-size: 1.2rem;
+    padding: 0px;
   }
   .shadow-container-proxya p, .shadow-container-school p, .shadow-container-uni-huelva p {
     max-width: 290px;
