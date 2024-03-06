@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   background-color: rgba(20, 21, 38, 0.8);
   font-family: 'Roboto Mono', monospace;
 }
@@ -17,11 +17,11 @@ body{
   width: 70px;
   height: auto;
 }
-a img{
+a img {
   width: 50px;
   height: 50px;
 }
-.nav{
+.nav {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,16 +31,16 @@ a img{
   width: 120px;
   height: 100%;
 }
-.nav a:first-child{margin-top: 15px;}
-.nav a:last-child{margin-bottom: 15px;}
-.principal-container{
+.nav a:first-child {margin-top: 15px;}
+.nav a:last-child {margin-bottom: 15px;}
+.principal-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.title, h3{
+.title, h3 {
   color: aqua;
   display: flex;
   justify-content: center;
@@ -95,6 +95,8 @@ a img{
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-left: 40px;
   text-align: center;
   font-size: 1.4rem;
@@ -117,6 +119,8 @@ a img{
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   font-size: 1.4rem;
   color: white;
@@ -137,6 +141,8 @@ a img{
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 1.4rem;
@@ -157,6 +163,8 @@ a img{
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 1.4rem;
@@ -173,10 +181,12 @@ a img{
   align-items: center;
 }
 .shadow-container-ada p {
-  max-width: 500px;
+  max-width: max-content;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 1.4rem;
@@ -197,6 +207,8 @@ a img{
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 1.4rem;
@@ -217,6 +229,8 @@ a img{
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 1.4rem;
@@ -313,6 +327,8 @@ a img{
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 1.4rem;
@@ -385,6 +401,11 @@ a img:hover {
   .shadow-container-front img, .shadow-container-languages img {
     width: 70px;
   }
+  .shadow-container-backend-2, .shadow-container-backend-1, 
+  .shadow-container-front {
+    display: grid;
+    grid-template-columns: 170px 170px;
+  }
   #shadow1 {
     background-color: rgb(20, 21, 38);
     box-shadow: -20px 20px 5px -10px aqua;
@@ -401,12 +422,9 @@ a img:hover {
 @media (width <=650px) {
   .shadow-container p, .shadow-container-proxya p, .shadow-container-university p,
   .shadow-container-school p, .shadow-container-ada p, .shadow-container-uni-huelva p,
-  .shadow-container-sp p, .shadow-container-languages p {
+  .shadow-container-sp p, .shadow-container-backend-2 p, .shadow-container-backend-1 p,
+  .shadow-container-front p, .shadow-container-languages p {
     font-size: 1.2rem;
-    padding: 0px;
-  }
-  .shadow-container-proxya p, .shadow-container-school p, .shadow-container-uni-huelva p {
-    max-width: 290px;
   }
   .efecto {width: 300px;}
   .shadow-container {
@@ -421,12 +439,11 @@ a img:hover {
   .university, .school {height: 220px;}
   .uni-huelva, .sp {height: 80px;}
   .shadow-container-backend-1, .shadow-container-backend-2, .shadow-container-front {
-    grid-template-columns: 120px 120px;
+    grid-template-columns: 140px 140px;
   }
   .shadow-container-backend-1 img, .shadow-container-backend-2 img, .shadow-container-front img {
     width: 80px;
     height: auto;
-    margin: 20px;
   }
   .shadow-container-languages {margin-bottom: 90px;}
 }
@@ -441,12 +458,6 @@ a img:hover {
     font-size: 1rem;
     margin-top: 10px;
     margin-bottom: 30px;
-  }
-  .shadow-container, .shadow-container-proxya, .shadow-container-school,
-  .shadow-container-ada, .shadow-container-uni-huelva,
-  .shadow-container-sp, .shadow-container-backend-1,
-  .shadow-container-backend-2, .shadow-container-front {
-    max-width: 170px;
   }
   .fotoJCG {width: 120px;}
   .efecto {width: 170px;}
@@ -467,10 +478,10 @@ a img:hover {
     margin-bottom: 20px;
   }
   .shadow-container-backend-1 img, .shadow-container-backend-2 img,
-  .shadow-container-front img, .shadow-container-languages img {
+  .shadow-container-front img {
     width: 40px;
   }
-  .shadow-container-backend-1, .shadow-container-backend-2, .shadow-container-front{
-    grid-template-columns: 100px 100px;
+  .shadow-container-front img {
+    margin: 0px 0px 0px 50px;
   }
 }
