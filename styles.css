@@ -452,13 +452,6 @@ a img:hover {
     font-size: 1.1rem;
     margin-top: 0px;
   }
-  .shadow-container p, .shadow-container-proxya p, .shadow-container-university p,
-  .shadow-container-school p, .shadow-container-ada p, .shadow-container-uni-huelva p,
-  .shadow-container-sp p, .shadow-container-languages p {
-    font-size: 1rem;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
   .fotoJCG {width: 120px;}
   .efecto {width: 170px;}
   .proxya {
@@ -479,9 +472,6 @@ a img:hover {
   }
   .shadow-container-backend-1 img, .shadow-container-backend-2 img,
   .shadow-container-front img {
-    width: 40px;
-  }
-  .shadow-container-front img {
-    margin: 0px 0px 0px 50px;
+    width: 60px;
   }
 }
